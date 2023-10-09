@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(235, 18%, 26%);
+
 }
 main{
     display: flex;
@@ -14,12 +18,63 @@ main{
 }
 .container{
     margin: auto;
-  /*  width: 500px;*/
+    width: 1000px;
     padding: 50px;
     border-radius: 50px;
-    background-color: hsl(0, 0%, 100%)
+    background-color: hsl(0, 0%, 100%);
+
+    overflow: hidden;
 }
 article, section{
+    vertical-align: top;
     display: inline-block;
+    height: 600px;
+    width: 40%;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
 }
-
+article{
+    width: 500px;
+    margin-right: 30px;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+   /* margin-top:90px;*/
+    margin:90px 20px 20px 20px;
+    font-size: 30px
+}
+.letras{
+    margin: 20px;
+}
+label, input,button{
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+input, button{
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+   /* height: 80px;*/
+}
+button{
+    padding: 20px 80px 50px 80px;
+    margin-top: 30px;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+}
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+}
+ul{
+    list-style-type: none;
+}
+li{
+    margin-bottom: 20px;
+}
+.lista{
+    float: left;
+}
