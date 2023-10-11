@@ -1,3 +1,7 @@
+:root{
+    --largura:1000px
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +22,7 @@ main{
 }
 .container{
     margin: auto;
-    width: 1000px;
+    width: var(--largura);
     padding: 50px;
     border-radius: 50px;
     background-color: hsl(0, 0%, 100%);
@@ -65,6 +69,7 @@ button{
     background-color: hsl(235, 18%, 26%);
     color: hsl(0, 0%, 100%);
     border-radius: 5px;
+    text-align: center;
 }
 button:hover{
     background-color: hsl(4, 100%, 67%);
@@ -72,11 +77,20 @@ button:hover{
 }
 ul{
     list-style-type: none;
+    list-style-image: url(../newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg);
 }
 li{
     margin-bottom: 20px;
 }
-.lista{
-    float: left;
+#imgconclusao{
+   display: flex;
+  
+}
+#elmFinalizador{
+    display: none;
+}
+.h1verificacao{
+    font-size: 50px;
+    margin-top: 20px;
 }
 

@@ -1,15 +1,42 @@
+/*document.getElementById("botao").addEventListener("click", function(event){
+    event.preventDefault();
+    console.log("Certo")
+})*/
 
 
-document.getElementById("botao").addEventListener("click", function(){
-    let divConclusao = document.getElementById("elmFinalizador")
-let divSection = document.getElementById("sessao")
-let divArticle = document.getElementById("artigo")
-let button = document.getElementById("botao")
+
+document.getElementById("botao").addEventListener("click", function(event){
+    event.preventDefault();
+
     
-    
-    
-    
-    divSection.classList.add("invisivel")
-    divArticle.classList.add("invisivel")
-    divConclusao.classList.remove("invisivel")
+    let mail = document.getElementById("emailuser").value
+
+    document.getElementById("sessao").style.display = 'none';
+    document.getElementById("artigo").style.display = 'none';
+    document.getElementById("elmFinalizador").style.display = 'block';
+    document.documentElement.style.setProperty('--largura', '400px')
+    document.getElementById("emailconfirm").value = mail
+
 })
+
+
+/*  
+document.addEventListener("DOMContentLoaded", function () {
+    const emailInput = document.getElementById("emailuser");
+    const submitButton = document.getElementById("botao");
+    const conclusao = document.getElementById("elmFinalizador");
+    const imagem = document.getElementById("sessao");
+    const artigo = document.getElementById("artigo");
+
+    submitButton.addEventListener("click", function () {
+        let email = emailInput.value;
+        if (email) {
+            conclusao.style.display = "block";
+            emailInput.style.display = "none";
+            submitButton.style.display = "none";
+            imagem.style.display = "none"
+            artigo.style.display = "none"
+        }
+    });
+});
+*/
