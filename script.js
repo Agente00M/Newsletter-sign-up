@@ -10,16 +10,36 @@ document.getElementById("botao").addEventListener("click", function(event){
 
     
     let mail = document.getElementById("emailuser").value
+    if(mail === ""){
+        alert("Informe o email!!!")
+     console.log("Moises é lindão")
+    }
+    console.log(mail)
+    console.log("Moises é lindão")
+    document.getElementById("emailconfirm").textContent = mail
+
+
 
     document.getElementById("sessao").style.display = 'none';
     document.getElementById("artigo").style.display = 'none';
     document.getElementById("elmFinalizador").style.display = 'block';
     document.documentElement.style.setProperty('--largura', '400px')
-    document.getElementById("emailconfirm").value = mail
+    }
+)
+
+
+
+
+
+document.getElementById("voltar").addEventListener("click", function(event){
+    event.preventDefault();
+    document.getElementById("sessao").style.display = 'inline-block';
+    document.getElementById("artigo").style.display = 'inline-block';
+    document.getElementById("elmFinalizador").style.display = 'none';
+    document.documentElement.style.setProperty('--largura', '1000px')
+
 
 })
-
-
 /*  
 document.addEventListener("DOMContentLoaded", function () {
     const emailInput = document.getElementById("emailuser");
