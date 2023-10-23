@@ -12,10 +12,10 @@ document.getElementById("botao").addEventListener("click", function(event){
     let mail = document.getElementById("emailuser").value
     if(mail === ""){
         alert("Informe o email!!!")
-     console.log("Moises é lindão")
+     
     }
     console.log(mail)
-    console.log("Moises é lindão")
+    
     document.getElementById("emailconfirm").textContent = mail
 
 
